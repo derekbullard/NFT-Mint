@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0xbAAeBEe4c5599E1B8A7f885e04f75bb27e75f9F8",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0xbAAeBEe4c5599E1B8A7f885e04f75bb27e75f9F8",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 4
+  },
+  "NFT_NAME": "PixelMfers",
+  "SYMBOL": "PM",
+  "MAX_SUPPLY": 10000,
+  "WEI_COST": 69420000000000000,
+  "DISPLAY_COST": 0.069420,
+  "GAS_LIMIT": 285000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/pixelmfers-v2",
+  "SHOW_BACKGROUND": true
+}
