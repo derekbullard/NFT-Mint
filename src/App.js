@@ -51,12 +51,12 @@ export const StyledRoundButton = styled.button`
 `;
 
 export const ResponsiveWrapper = styled.div`
-  display: flex;
   flex: 1;
-  flex-direction: column;
-  justify-content: stretched;
+  flex-direction: row;
+  height: 55%;
+  margin-top: 2.5%;
   align-items: stretched;
-  width: 100%;
+  width: 375px;
   @media (min-width: 767px) {
     flex-direction: row;
   }
@@ -200,7 +200,8 @@ function App() {
       >
         <StyledLogo alt={"logo"} src={"/config/images/logo.png"} 
         style={{
-          width: "40%"
+          marginTop: "5%",
+          width: "50%"
 
         }} />
         <s.SpacerSmall />
@@ -215,7 +216,7 @@ function App() {
             ai={"center"}
             style={{
               backgroundColor: "rgba(80, 80, 80, 0.7)",
-              padding: 24,
+              padding: 15,
               borderRadius: 24,
               border: "4px white",
               boxShadow: "0px 5px 11px 2px rgba(0,0,0,0.7)",
@@ -225,7 +226,7 @@ function App() {
             <s.TextTitle
               style={{
                 textAlign: "center",
-                fontSize: 50,
+                fontSize: 70,
                 fontWeight: "bold",
                 color: "var(--accent-text)",
               }}
@@ -234,6 +235,7 @@ function App() {
             </s.TextTitle>
             <s.TextDescription
               style={{
+                fontSize: 20,
                 textAlign: "center",
                 color: "var(--primary-text)",
               }}
@@ -251,7 +253,7 @@ function App() {
                   The sale has ended.
                 </s.TextTitle>
                 <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{ textAlign:  "center", color: "var(--accent-text)" }}
                 >
                   You can still find {CONFIG.NFT_NAME} on
                 </s.TextDescription>
@@ -263,14 +265,14 @@ function App() {
             ) : (
               <>
                 <s.TextTitle
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{ fontSize: 30, textAlign: "center", color: "var(--accent-text)" }}
                 >
                   1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
                   {CONFIG.NETWORK.SYMBOL}.
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription
-                  style={{ textAlign: "center", color: "var(--accent-text)" }}
+                  style={{ fontSize: 30, textAlign: "center", color: "var(--accent-text)" }}
                 >
                   Excluding gas fees.
                 </s.TextDescription>
@@ -280,6 +282,7 @@ function App() {
                   <s.Container ai={"center"} jc={"center"}>
                     <s.TextDescription
                       style={{
+                        fontSize: 15,
                         textAlign: "center",
                         color: "var(--accent-text)",
                       }}
@@ -320,7 +323,7 @@ function App() {
                     >
                       {feedback}
                     </s.TextDescription>
-                    <s.SpacerMedium />
+                    
                     <s.Container ai={"center"} jc={"center"} fd={"row"}>
                       <StyledRoundButton
                         style={{ lineHeight: 0.4 }}
